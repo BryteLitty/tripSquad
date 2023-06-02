@@ -45,6 +45,10 @@ a {
     color: transparent;
 }
 
+/* .nav-brand img {
+    width: 5%;
+} */
+
 .nav-links {
     display: flex;
     justify-content: space-between;
@@ -190,7 +194,8 @@ a {
 }
 
 /* book trip button */
-.btn-book-now {
+.btn-book-now,
+.btn-join-club {
     position: relative;
     background-color: #211818;
     border: none;
@@ -231,11 +236,16 @@ a {
 .value-prep-grid {
     display: grid;
     grid-template-columns: auto auto auto;
+    margin-top: 100px;
+    justify-content: space-between;
 }
-
+/* 
 .grid-box {
     border: black solid 2px;
     margin: 50px;
+    position: relative;
+    top: 50;
+
 }
 .circle {
     background-color: #F5F5F5;
@@ -257,4 +267,72 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+} */
+
+
+.grid-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px; 
+    /* height: 200px;  */
+    border: 1px solid #000000;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin: 50px;
+
+    padding: 80px 20px 30px;
 }
+  
+.circle {
+  position: absolute;
+  background-color: #F5F5F5;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle img {
+  max-width: 50%;
+  max-height: 50%;
+  object-fit: contain;
+}
+
+
+
+  
+  
+.circle {
+    position: absolute;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.circle img {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+}
+
+.btn-join-club {
+    margin-top: 5%;
+}
+
+
+
+  
