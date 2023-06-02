@@ -18,10 +18,6 @@ a {
     text-decoration: none;
 }
 
-body {
-    background-color: #f6f2f2;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -111,6 +107,7 @@ body {
     color: white;
 }
 
+
 .hero-text-container h1 {
     margin-top: 30%;
     font-size: 48px;
@@ -141,9 +138,6 @@ body {
     background-color: #d6d6d6;
 }
 
-.images-carousel img {
-    width: 20%;
-}
 .next-trips-container {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -152,8 +146,7 @@ body {
 .activities-desc {
     padding: 100px 80px;
     /* text-align: center; */
-    height: 100vh;
-    
+    height: 100vh; 
 }
 
 
@@ -183,4 +176,85 @@ body {
 .activities-container li {
     margin: 19px;
     color: rgba(0, 0, 0, 0.5);    ;
+}
+
+/* images carousel */
+.images-carousel {
+    /* margin: 80px ; */
+    margin: 250px 110px 50px;
+}
+
+.carousel-images img {
+    width: 80%;
+    margin: auto;
+}
+
+/* book trip button */
+.btn-book-now {
+    position: relative;
+    background-color: #211818;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 45px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.btn-book-now:hover {
+    background-color: #443434;
+}
+
+
+/* WHY JOIN US SECTION */
+.why-join-us-section {
+  margin: 100px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.why-join-us-section h2 {
+    color: #8F3E3E;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.why-join-us-section h3 {
+    font-size: 34px;
+    color: #211818;
+    margin: 45px;
+}
+
+/* value preps */
+.value-prep-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-box {
+    border: black solid 2px;
+    margin: 50px;
+}
+.circle {
+    background-color: #F5F5F5;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle img {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
