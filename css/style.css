@@ -208,7 +208,8 @@ a {
     cursor: pointer;
 }
 
-.btn-book-now:hover {
+.btn-book-now:hover
+.btn-join-club:hover {
     background-color: #443434;
 }
 
@@ -220,16 +221,17 @@ a {
   background-color: #fff;
 }
 
-.why-join-us-section h2 {
+.dark-heading {
     color: #8F3E3E;
     font-size: 16px;
     font-weight: 500;
 }
 
-.why-join-us-section h3 {
+.sub-heading {
     font-size: 34px;
     color: #211818;
     margin: 45px;
+    font-weight: 500;
 }
 
 /* value preps */
@@ -334,5 +336,24 @@ a {
 }
 
 
+/* TESTIMONIAL SECTION */
+.testimonial-section,
+.our-offer-section {
+    margin: 100px 100px;
+    text-align: center;
+}
+
+/* OFFER SECTION */
+/* .our-offer-section {
+    margin: 100px;
+    padding: 50px;
+} */
+
+.paragraph {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
 
   
