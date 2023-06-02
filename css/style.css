@@ -142,13 +142,45 @@ body {
 }
 
 .images-carousel img {
-    width: 50%;
+    width: 20%;
 }
 .next-trips-container {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .activities-desc {
+    padding: 100px 80px;
+    /* text-align: center; */
+    height: 100vh;
     
+}
+
+
+.activities-desc h2 {
+    color: #8F3E3E;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.activities-desc h1 {
+    font-weight: 500;
+    font-size: 34px;
+    margin: 21px 0;
+}
+
+.activities-desc h3 {
+    font-size: 18px;
+    font-weight: 500px;
+    margin: 58px 0 20px;
+}
+
+.activities-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.activities-container li {
+    margin: 19px;
+    color: rgba(0, 0, 0, 0.5);    ;
 }
