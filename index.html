@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/slick/slick-theme.css">
@@ -16,20 +18,20 @@
 <body>
     <nav class="navbar">
         <div class="nav-brand">
-            <a href="./index.html">theTripSquad</a>
-            <!-- <a href="./index.html">
-                <img src="./assets/images/logo.png" alt="">
-            </a> -->
+            <a href="./index.html">
+                <img src="./assets/images/logo white.png" alt="">
+            </a>
         </div>
 
         <ul class="nav-links">
-            <li class="nav-link"><a href="#">About</a></li>
+            <li class="nav-link"><a href="#about">About</a></li>
             <li class="nav-link"><a href="">Blog</a></li>
+            <button class="join-button">Join Our Community</button>
         </ul>
 
-        <div class="join-button-box">
+        <!-- <div class="join-button-box">
             <button class="join-button">Join Our Community</button>
-        </div>
+        </div> -->
     </nav>
 
     <!-- main -->
@@ -37,7 +39,7 @@
         <div class="hero-section">
             <div class="overlay">
                 <div class="hero-text-container">
-                    <h1>Don't Trip, Take a Trip</h1>
+                    <h1>don't trip, take a trip</h1>
                     <a href="#">
                         <button class="btn-book-trip">Book your trip
                             <img src="./assets/icons/arrow-to-right.svg" alt="">
@@ -67,7 +69,7 @@
 
                 <div class="activities-desc">
                     <h2>JOIN THE NEXT TRIP</h2>
-                    <h1>Upcoming Trips</h1>
+                    <h1 class="sub-heading">Upcoming Trips</h1>
                     <h3>ACTIVITIES</h3>
                     <div class="activities-container">
                         <div class="left">
@@ -148,7 +150,7 @@
 
 
         <!-- OFFER SECTION -->
-        <div class="our-offer-section">
+        <div id="about" class="our-offer-section">
             <h2 class="dark-heading">OUR OFFERS</h2>
             <h2 class="sub-heading">What We Do</h2>
             <p class="paragraph">
@@ -156,6 +158,34 @@
             </p>
         </div>
 
+        <!-- FOOTER -->
+        <footer>
+           <div class="container">
+            <div class="flex-container brand">
+                <!-- <h1>theTripSquad</h1> -->
+                <img src="./assets/images/logo1.png" alt="">
+                <p>&copy; Copyright <span id="currentYear"></span>
+            </div>
+            <div class="flex-container community">
+                <h2 class="footer-heading">Communities</h2>
+                <a href="">Join us</a>
+            </div>
+            <div class="flex-container contact">
+                <h2 class="footer-heading">Contact</h2>
+                <p>023 333 0986</p>
+                <p>Email: <a href="mailto:hey@something.net">hey@mivado.com</a></p>
+            </div>
+            <div class="flex-container social">
+                <h2 class="footer-heading">Social Media</h2>
+                <ul class="social-icons">
+                    <li class="icon"><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li class="icon"><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+                    <li class="icon"><a href=""><i class="fa-brands fa-square-instagram"></i></i></a></li>
+                    <li class="icon"><a href=""><i class="fa-brands fa-square-youtube"></i></a></li>
+                </ul>
+            </div>
+           </div> 
+        </footer>
     </main>
 
 

@@ -5,6 +5,7 @@
 :root {
     --primary-color: #d9d9d9;
     --secondary-color: #8F3E3E;
+    --dark-button-color: #252847;
 }
 
 * {
@@ -14,13 +15,18 @@
     font-family: Inter;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+  
 a {
     text-decoration: none;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: flex-start;
     align-items: center;
     position: absolute; 
     top: 0;
@@ -28,30 +34,20 @@ a {
     width: 100%;
     padding: 3% 100px;
     z-index: 2;
-    margin: auto;
+    /* margin: auto; */
+    /* background-color: yellow; */
 }
 
-.nav-brand a{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    text-decoration: none;
 
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    -webkit-text-stroke: 2px #fff;
-    color: transparent;
+.nav-brand img {
+    display: inline;
+    width: 25%;
 }
-
-/* .nav-brand img {
-    width: 5%;
-} */
 
 .nav-links {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -71,9 +67,9 @@ a {
 
 
 .join-button {
-    padding: 10px 20px;
-    background-color: #D9D9D9;
-    color: #8F3E3E;
+    padding: 15px 20px;
+    background-color: #fff;
+    color: var(--dark-button-color);
     font-weight: 500;
     font-size: 20px;
     border: none;
@@ -82,8 +78,8 @@ a {
 
 .join-button:hover {
     cursor: pointer;
-    color: var(--primary-color);
-    background-color: black;
+    background-color: var(--dark-button-color);
+    color: #fff;
     transition: all ease-out 0.4s;
 }
 
@@ -120,7 +116,7 @@ a {
 }
 
 .btn-book-trip {
-    background-color: black;
+    background-color: var(--dark-button-color);
     padding: 20px 30px;
     border: none;
     color: white;
@@ -130,6 +126,7 @@ a {
     display: flex;
     align-items: center;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .btn-book-trip img {
@@ -197,7 +194,7 @@ a {
 .btn-book-now,
 .btn-join-club {
     position: relative;
-    background-color: #211818;
+    background-color: var(--dark-button-color);
     border: none;
     border-radius: 5px;
     padding: 20px 45px;
@@ -208,11 +205,15 @@ a {
     cursor: pointer;
 }
 
-.btn-book-now:hover
-.btn-join-club:hover {
-    background-color: #443434;
+.btn-book-now:hover,
+.btn-join-club:hover,
+.btn-book-trip:hover {
+    background-color: white;
+    color: var(--dark-button-color);
+    transition: all ease-out 0.4s;  
+    padding: 20px 45px;
+    border: 1px solid var(--dark-button-color);  
 }
-
 
 /* WHY JOIN US SECTION */
 .why-join-us-section {
@@ -240,37 +241,8 @@ a {
     grid-template-columns: auto auto auto;
     margin-top: 100px;
     justify-content: space-between;
+    color: rgba(0, 0, 0, 0.5);
 }
-/* 
-.grid-box {
-    border: black solid 2px;
-    margin: 50px;
-    position: relative;
-    top: 50;
-
-}
-.circle {
-    background-color: #F5F5F5;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.circle img {
-    max-width: 50%;
-    max-height: 50%;
-    object-fit: contain;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
 
 .grid-box {
     position: relative;
@@ -339,7 +311,7 @@ a {
 /* TESTIMONIAL SECTION */
 .testimonial-section,
 .our-offer-section {
-    margin: 100px 100px;
+    margin: 100px 250px;
     text-align: center;
 }
 
@@ -356,4 +328,65 @@ a {
     line-height: 30px;
 }
 
-  
+/* FOOTER SECTION */
+footer {
+    background-color: rgba(217, 217, 217, 0.5);
+    padding: 120px 150px;
+}
+
+footer a {
+    color: #000000;
+}
+
+footer img {
+    width: 40%;
+}
+
+.flex-container {
+    margin: 0 auto;
+}
+
+.footer-heading {
+    margin-bottom: 15px;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* align-items: center; */
+    text-align: center;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+.contact,
+.brand,
+.community {
+    text-align: start;
+}
+
+.brand {
+    margin-left: 60px;
+}
+
+.social {
+    text-align: center;
+}
+
+.social-icons {
+    list-style-type: none;
+    display: flex;
+    /* width: 60%; */
+    gap: 50px;
+    justify-content: space-between;
+}
+
+
+.fa-brands {
+    color: #C7C5C5;
+    font-size: 40px;
+}
