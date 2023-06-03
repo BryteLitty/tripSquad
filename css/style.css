@@ -315,6 +315,16 @@ a {
     text-align: center;
 }
 
+.img-box {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(143, 62, 62, 0.2);
+}
+.testimonial-carousel {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /* OFFER SECTION */
 /* .our-offer-section {
     margin: 100px;
