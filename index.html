@@ -4,25 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>theTripSquad - Homepage</title>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-brand">
-            <a href="./index.html">theTripSquad</a>
+            <a href="./index.html">
+                <img src="./assets/images/logo white.png" alt="">
+            </a>
         </div>
 
         <ul class="nav-links">
-            <li class="nav-link"><a href="#">About</a></li>
+            <li class="nav-link"><a href="#about">About</a></li>
             <li class="nav-link"><a href="">Blog</a></li>
+            <button class="join-button">Join Our Community</button>
         </ul>
 
-        <div class="join-button-box">
+        <!-- <div class="join-button-box">
             <button class="join-button">Join Our Community</button>
-        </div>
+        </div> -->
     </nav>
 
     <!-- main -->
@@ -30,7 +39,7 @@
         <div class="hero-section">
             <div class="overlay">
                 <div class="hero-text-container">
-                    <h1>Don't Trip, Take a Trip</h1>
+                    <h1>don't trip, take a trip</h1>
                     <a href="#">
                         <button class="btn-book-trip">Book your trip
                             <img src="./assets/icons/arrow-to-right.svg" alt="">
@@ -43,20 +52,148 @@
         <div class="join-next-trip-section">
             <div class="next-trips-container">
                 <div class="images-carousel">
-                    <img src="./assets/images/bgImage.png" alt="">
+                    <!-- <img src="./assets/images/bgImage.png" alt=""> -->
+                    <div class="carousel-images">
+                        <div>
+                            <img src="./assets/images/img1.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/images/img2.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/images/img3.svg" alt="">
+                        </div>
+                      </div>
+                      
                 </div>
 
                 <div class="activities-desc">
                     <h2>JOIN THE NEXT TRIP</h2>
-                    <h1>Upcoming Trips</h1>
+                    <h1 class="sub-heading">Upcoming Trips</h1>
                     <h3>ACTIVITIES</h3>
                     <div class="activities-container">
-                        <div class="left">Left</div>
-                        <div class="right">Right</div>
+                        <div class="left">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ducimus.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ducimus.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ducimus.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ducimus.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ducimus.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ducimus.</li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ducimus.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ducimus.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ducimus.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ducimus.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ducimus.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ducimus.</li>
+                            </ul>
+                        </div>
+
                     </div>
+                    <a href="#">
+                        <button class="btn-book-now">Book Trip Now</button>
+                    </a>
                 </div>
             </div>
         </div>
+
+        <div class="why-join-us-section">
+            <h2 class="dark-heading">WHY JOIN US</h2>
+            <h3 class="sub-heading">Become Part of Our Travel Club</h3>
+
+            <div class="value-prep-grid">
+                <div class="grid-box">
+                    <div class="circle">
+                        <img src="./assets/icons/handshake.svg" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident officiis, doloribus sapiente at iure ea blanditiis labore numquam distinctio quos modi quae. Repellendus at, non adipisci aperiam ex tempore voluptatum a. Quam dignissimos eveniet fugit consequatur perferendis corporis voluptates fugiat!</p>
+                </div>
+
+                <div class="grid-box">
+                    <div class="circle">
+                        <img src="./assets/icons/handshake.svg" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident officiis, doloribus sapiente at iure ea blanditiis labore numquam distinctio quos modi quae. Repellendus at, non adipisci aperiam ex tempore voluptatum a. Quam dignissimos eveniet fugit consequatur perferendis corporis voluptates fugiat!</p>
+                </div>
+
+                <div class="grid-box">
+                    <div class="circle">
+                        <img src="./assets/icons/handshake.svg" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident officiis, doloribus sapiente at iure ea blanditiis labore numquam distinctio quos modi quae. Repellendus at, non adipisci aperiam ex tempore voluptatum a. Quam dignissimos eveniet fugit consequatur perferendis corporis voluptates fugiat!</p>
+                </div>
+
+                <!-- <div class="grid-box">two</div>
+                <div class="grid-box">three</div> -->
+            </div>
+
+            <button class="btn-join-club">Join the Club</button>
+        </div>
+
+        <!-- TESTIMONIAL SECTION -->
+        <div class="testimonial-section">
+            <h2 class="dark-heading">TESTIMONIALS & EXPERIENCES</h2>
+            <h3 class="sub-heading">Our Squad's Experience</h3>
+            <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor non earum nemo nam quaerat modi quos maxime explicabo ullam aliquid sint similique qui suscipit repellendus debitis exercitationem perferendis, dicta odio illum id doloribus numquam voluptates distinctio? Veritatis, sapiente? Adipisci nobis, libero at error labore sunt distinctio eos facilis in optio cupiditate nam rerum, ratione corrupti! Molestias velit expedita ullam nesciunt!
+            </p>
+
+            <!-- Testimonials Carousel -->
+            <div class="testimonial-carousel">
+                <div class="img-box">image</div>
+                <div class="img-box">image</div>
+                <div class="img-box">image</div>
+            </div>
+        </div>
+
+
+        <!-- OFFER SECTION -->
+        <div id="about" class="our-offer-section">
+            <h2 class="dark-heading">OUR OFFERS</h2>
+            <h2 class="sub-heading">What We Do</h2>
+            <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum delectus, cupiditate ullam esse molestiae qui, nostrum ut obcaecati iure commodi perspiciatis doloremque id cumque corrupti fuga omnis libero aliquam natus. Aliquid rerum eligendi optio eum vel! Perspiciatis, dolores sequi? Alias laudantium provident maxime quae voluptas ullam, eveniet modi velit veritatis recusandae autem saepe molestias, facere sed cum laborum possimus sit quod. Ipsum alias beatae dolores blanditiis quia saepe at consequatur magni asperiores fugit molestiae assumenda, facere inventore tempora vero nesciunt accusamus sapiente. Eveniet esse dolorum laudantium quidem, dicta eaque placeat sint veniam animi culpa nihil quasi nisi delectus obcaecati iusto.
+            </p>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+           <div class="container">
+            <div class="flex-container brand">
+                <!-- <h1>theTripSquad</h1> -->
+                <img src="./assets/images/logo1.png" alt="">
+                <p>&copy; Copyright <span id="currentYear"></span>
+            </div>
+            <div class="flex-container community">
+                <h2 class="footer-heading">Communities</h2>
+                <a href="">Join us</a>
+            </div>
+            <div class="flex-container contact">
+                <h2 class="footer-heading">Contact</h2>
+                <p>023 333 0986</p>
+                <p>Email: <a href="mailto:hey@something.net">hey@mivado.com</a></p>
+            </div>
+            <div class="flex-container social">
+                <h2 class="footer-heading">Social Media</h2>
+                <ul class="social-icons">
+                    <li class="icon"><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li class="icon"><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+                    <li class="icon"><a href=""><i class="fa-brands fa-square-instagram"></i></i></a></li>
+                    <li class="icon"><a href=""><i class="fa-brands fa-square-youtube"></i></a></li>
+                </ul>
+            </div>
+           </div> 
+        </footer>
     </main>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/carousel-js/script.js"></script>
 </body>
 </html>
