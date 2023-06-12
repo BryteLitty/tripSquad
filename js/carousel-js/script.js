@@ -8,3 +8,11 @@ $('.carousel-images').slick({
     default: false,
     autoplay: true
 });
+
+// $('.testimonial-carousel').slick({
+//     infinite: true,
+//     dots: true,
+//     slidesToShow: 3,
+//     default: false,
+//     autoplay: true
+// });
